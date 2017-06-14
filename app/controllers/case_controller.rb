@@ -1,5 +1,5 @@
 class CaseController < ApplicationController
   def index
-    @cases = Case.all
+    @cases = Case.order (:title)
   end
 end

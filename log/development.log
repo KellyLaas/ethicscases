@@ -1295,3 +1295,696 @@ app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___135681974
   [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 4], ["case_id", 2]]
   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cases"[0m
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:19:30 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.5ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  Rendered case/index.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=title):
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121710688620'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:19:59 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  Rendered case/index.html.haml within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=id):
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121685646640'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:20:27 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case without an ID):
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121711928900'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:33:06 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected keyword_do, expecting ')'
+tml_escape((( % @cases.each do |case|
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:5: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:9: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/case/index.html.haml:4: syntax error, unexpected keyword_do, expecting ')'
+app/views/case/index.html.haml:5: syntax error, unexpected ';', expecting ')'
+app/views/case/index.html.haml:9: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/case/index.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/case/index.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:34:01 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3:   = % @cases.each do |case| 
+    4: 
+    5: 
+    6: 
+  
+app/views/case/index.html.haml:3
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:34:30 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_do, expecting ')'
+tml_escape((( % @cases.each do |case|
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:8: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:8: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_do, expecting ')'
+app/views/case/index.html.haml:4: syntax error, unexpected ';', expecting ')'
+app/views/case/index.html.haml:8: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/case/index.html.haml:8: syntax error, unexpected keyword_end, expecting ')'
+app/views/case/index.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:39:50 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_do, expecting ')'
+tml_escape((( % @cases.each do |case|
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:10: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:10: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_do, expecting ')'
+app/views/case/index.html.haml:4: syntax error, unexpected ';', expecting ')'
+app/views/case/index.html.haml:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/case/index.html.haml:10: syntax error, unexpected keyword_end, expecting ')'
+app/views/case/index.html.haml:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:44:48 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:6: syntax error, unexpected '.', expecting keyword_when
+l::Helpers.html_escape(((case.title
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:7: syntax error, unexpected '.', expecting keyword_when
+.html_escape((( sanitize(case.abstract)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:8: syntax error, unexpected ')', expecting keyword_end
+)).to_s));).to_s);; _hamlout.buffer << ("\n</di
+                 ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+app/views/case/index.html.haml:6: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:7: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:8: syntax error, unexpected ')', expecting keyword_end
+app/views/case/index.html.haml:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:46:24 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected '.', expecting keyword_when
+l::Helpers.html_escape(((case.title
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:5: syntax error, unexpected '.', expecting keyword_when
+.html_escape((( sanitize(case.abstract)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:6: syntax error, unexpected ')', expecting keyword_end
+)).to_s));).to_s);; _hamlout.buffer << ("\n".fr
+                 ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+app/views/case/index.html.haml:4: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:5: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:6: syntax error, unexpected ')', expecting keyword_end
+app/views/case/index.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:46:46 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+l_temp =  @cases.each do |case|
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected '.', expecting keyword_when
+l::Helpers.html_escape(((case.title
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:5: syntax error, unexpected '.', expecting keyword_when
+.html_escape((( sanitize(case.abstract)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:6: syntax error, unexpected ')', expecting keyword_end
+)).to_s));).to_s);; _hamlout.buffer << ("\n".fr
+                 ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+app/views/case/index.html.haml:4: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:5: syntax error, unexpected '.', expecting keyword_when
+app/views/case/index.html.haml:6: syntax error, unexpected ')', expecting keyword_end
+app/views/case/index.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:48:18 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 1 space used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: %h1 List of cases
+    3: %ul.cases
+    4:   @cases.each do |case|
+    5:  = render partial: 'case', locals: { case : title}
+    6: 
+    7: 
+    8: 
+  
+app/views/case/index.html.haml:5
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:50:09 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 24.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Peggy"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Connolley"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Peggy"], ["last_name", "Connolley"], ["created_at", "2017-06-14 20:51:59.022931"], ["updated_at", "2017-06-14 20:51:59.022931"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Bob"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Ladenson"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Bob"], ["last_name", "Ladenson"], ["created_at", "2017-06-14 20:51:59.026410"], ["updated_at", "2017-06-14 20:51:59.026410"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Vivian"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Weil"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Vivian"], ["last_name", "Weil"], ["created_at", "2017-06-14 20:51:59.031204"], ["updated_at", "2017-06-14 20:51:59.031204"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Michael"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Davis"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Michael"], ["last_name", "Davis"], ["created_at", "2017-06-14 20:51:59.036058"], ["updated_at", "2017-06-14 20:51:59.036058"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Peggy"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Connolley"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "The Whistle-Blower"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Whistle-Blower"], ["year", "1999"], ["abstract", "Research assistant blows whistle on supervisor."], ["created_at", "2017-06-14 20:51:59.091557"], ["updated_at", "2017-06-14 20:51:59.091557"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 1], ["case_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Vivian"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Weil"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Michael"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Davis"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "Immigration woe"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Immigration woe"], ["year", "2016"], ["abstract", "Student stuck in bad TA position due to immigration status,\n              overworked and underpaid"], ["created_at", "2017-06-14 20:51:59.103080"], ["updated_at", "2017-06-14 20:51:59.103080"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 3], ["case_id", 2]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 4], ["case_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cases"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Peggy"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Connolley"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Peggy"], ["last_name", "Connolley"], ["created_at", "2017-06-14 20:53:20.826120"], ["updated_at", "2017-06-14 20:53:20.826120"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Bob"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Ladenson"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Bob"], ["last_name", "Ladenson"], ["created_at", "2017-06-14 20:53:20.838325"], ["updated_at", "2017-06-14 20:53:20.838325"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Vivian"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Weil"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Vivian"], ["last_name", "Weil"], ["created_at", "2017-06-14 20:53:20.842393"], ["updated_at", "2017-06-14 20:53:20.842393"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Michael"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Davis"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Michael"], ["last_name", "Davis"], ["created_at", "2017-06-14 20:53:20.846161"], ["updated_at", "2017-06-14 20:53:20.846161"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Peggy"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Connolley"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "The Whistle-Blower"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Whistle-Blower"], ["year", "1999"], ["abstract", "Research assistant blows whistle on supervisor."], ["created_at", "2017-06-14 20:53:20.888444"], ["updated_at", "2017-06-14 20:53:20.888444"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 1], ["case_id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Vivian"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Weil"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Michael"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Davis"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "Immigration woe"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Immigration woe"], ["year", "2016"], ["abstract", "Student stuck in bad TA position due to immigration status,\n              overworked and underpaid"], ["created_at", "2017-06-14 20:53:20.899110"], ["updated_at", "2017-06-14 20:53:20.899110"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 3], ["case_id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 4], ["case_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cases"[0m
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:57:29 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3:   - @case.authors.each do |author|
+    4:   -puts author.last_name
+    5:   -end
+  
+app/views/case/index.html.haml:3
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:58:24 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:59:33 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+ @case.each do |case|
+                    ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+Started PUT "/__web_console/repl_sessions/deb9d09367a724093b49e3b303a272d3" for 127.0.0.1 at 2017-06-14 16:00:33 -0500
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:00:50 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected '|', expecting keyword_end
+ |@case.each do |case|
+  ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+ |@case.each do |case|
+                     ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected '|', expecting keyword_end
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:08:34 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:11:22 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: - @cases.each do |case|
+    4: - end
+    5: 
+    6: %p Will show a list of cases as soon as I figure out how to do this.
+  
+app/views/case/index.html.haml:4
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:15:38 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: - @cases.each do |case|
+    4: - end
+    5: 
+    6: %p Will show a list of cases as soon as I figure out how to do this.
+  
+app/views/case/index.html.haml:4
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:16:07 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+@cases.each do |case|
+                    ^):
+  
+app/views/case/index.html.haml:3: syntax error, unexpected keyword_case, expecting '|'
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:18:33 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected keyword_case, expecting '|'
+;  @cases.each do |case|
+                       ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:7: syntax error, unexpected '.', expecting keyword_when
+l::Helpers.html_escape(((case.title
+                              ^):
+  
+app/views/case/index.html.haml:4: syntax error, unexpected keyword_case, expecting '|'
+app/views/case/index.html.haml:7: syntax error, unexpected '.', expecting keyword_when
+Started GET "/" for 127.0.0.1 at 2017-06-14 16:19:43 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 20.8ms)
+
+
