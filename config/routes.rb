@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'case/index'
+  get 'cases/:case_token', to 'case#index', constraints: {
+    security_token: [0-9a-f]{10,}/}
+
 
   get 'home/index'
 
