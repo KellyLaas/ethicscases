@@ -198,3 +198,261 @@ SubjectTest: test_should_not_save_subject_without_content
   [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:30:22.730380', '2017-06-14 11:30:22.730380', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:30:22.730380', '2017-06-14 11:30:22.730380', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:30:22.733506', '2017-06-14 11:30:22.733506', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:30:22.733506', '2017-06-14 11:30:22.733506', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:30:22.735320', '2017-06-14 11:30:22.735320', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:30:22.735320', '2017-06-14 11:30:22.735320', 298486374)[0m
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:30:22 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 126ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CaseTest: test_year_must_be_4_numbers_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:32:35.939450', '2017-06-14 11:32:35.939450', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:32:35.939450', '2017-06-14 11:32:35.939450', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:32:35.943591', '2017-06-14 11:32:35.943591', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:32:35.943591', '2017-06-14 11:32:35.943591', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:32:35.945845', '2017-06-14 11:32:35.945845', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:32:35.945845', '2017-06-14 11:32:35.945845', 298486374)[0m
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CaseTest: test_year_must_be_4_numbers_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:32:36 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 125ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:35:13.781956', '2017-06-14 11:35:13.781956', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:35:13.781956', '2017-06-14 11:35:13.781956', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:35:13.784438', '2017-06-14 11:35:13.784438', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:35:13.784438', '2017-06-14 11:35:13.784438', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:35:13.786110', '2017-06-14 11:35:13.786110', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:35:13.786110', '2017-06-14 11:35:13.786110', 298486374)[0m
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CaseTest: test_year_must_be_4_numbers_long
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:35:13 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 126ms (Views: 118.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:37:38.185477', '2017-06-14 11:37:38.185477', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:37:38.185477', '2017-06-14 11:37:38.185477', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:37:38.187954', '2017-06-14 11:37:38.187954', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:37:38.187954', '2017-06-14 11:37:38.187954', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:37:38.189649', '2017-06-14 11:37:38.189649', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:37:38.189649', '2017-06-14 11:37:38.189649', 298486374)[0m
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:37:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 129ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[36mCase Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CaseTest: test_year_must_be_4_numbers_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:41:41.365494', '2017-06-14 11:41:41.365494', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:41:41.365494', '2017-06-14 11:41:41.365494', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:41:41.369157', '2017-06-14 11:41:41.369157', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:41:41.369157', '2017-06-14 11:41:41.369157', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:41:41.372524', '2017-06-14 11:41:41.372524', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:41:41.372524', '2017-06-14 11:41:41.372524', 298486374)[0m
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[36mCase Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+CaseTest: test_year_must_be_4_numbers_long
+------------------------------------------
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "My lovely case"], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "My lovely case"], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "My lovely case"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:41:41 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 128ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
