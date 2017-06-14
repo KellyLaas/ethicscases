@@ -1,2 +1,9 @@
-%h1 Case#index
+#index.thml.haml
+%h1 List of cases
+%ul.cases
+ = @case = Case.find(:title)
+
+
+
+
 %p Find me in app/views/case/index.html.haml

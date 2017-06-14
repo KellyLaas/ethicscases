@@ -553,3 +553,745 @@ Processing by CaseController#index as HTML
 Completed 200 OK in 32ms (Views: 19.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:20:19 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (Invalid attribute list: "(charset: \"UTF-8\")".):
+    1: %html
+    2:   %head
+    3:     %meta(charset: "UTF-8")
+    4:     %title Case Index
+    5:     
+    6:       %h1 Index of Cases
+  
+app/views/case/index.html.haml:3
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:28:29 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %title and nested within it.):
+    3:     %meta{charset: "UTF-8"}
+    4:     %title Case Index
+    5: 
+    6:       %h1 Index of Cases
+    7: 
+    8: %p Find me in app/views/case/index.html.haml
+  
+app/views/case/index.html.haml:6
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:28:54 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:34:43 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %title and nested within it.):
+    2:   %head
+    3:     %meta{charset: "UTF-8"}
+    4:     %title Case Index
+    5:       #content
+    6:       .title
+    7:       %h1= @title 
+    8: 
+  
+app/views/case/index.html.haml:5
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:35:15 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %title and nested within it.):
+    2:   %head
+    3:     %meta{charset: "UTF-8"}
+    4:     %title Case Index
+    5:       #content
+    6:         .title
+    7:           %h1= @title 
+    8: 
+  
+app/views/case/index.html.haml:5
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:36:20 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %title and nested within it.):
+    2:   %head
+    3:     %meta{charset: "UTF-8"}
+    4:     %title Case Index
+    5:       #content
+    6:       .title
+    7:           %h1= @title
+    8: 
+  
+app/views/case/index.html.haml:5
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:36:43 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %title and nested within it.):
+    2:   %head
+    3:     %meta{charset: "UTF-8"}
+    4:     %title Case Index
+    5:       .title
+    6:           %h1= @title
+    7: 
+    8: 
+  
+app/views/case/index.html.haml:5
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:40:36 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:48:13 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:5: syntax error, unexpected ':', expecting keyword_when
+tial: 'case', locals: { case : title}
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:6: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:9: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/case/index.html.haml:4: syntax error, unexpected keyword_case, expecting '|'
+app/views/case/index.html.haml:5: syntax error, unexpected ':', expecting keyword_when
+app/views/case/index.html.haml:6: syntax error, unexpected ';', expecting ')'
+app/views/case/index.html.haml:9: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/case/index.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/case/index.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:49:56 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases" ORDER BY "cases"."title" ASC[0m
+  Rendered case/index.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error ('#<Enumerator: [#<Case id: 2, title: "Immigration woe", year: "2016", abstract: "Student stuck in bad TA position due to immigratio...", created_at: "2017-06-14 15:00:23", updated_at: "2017-06-14 15:00:23">, #<Case id: 3, title: "Spam", year: "2018", abstract: "Spam, spam, spam", created_at: "2017-06-14 15:02:54", updated_at: "2017-06-14 15:02:54">, #<Case id: 1, title: "The Whistle-Blower", year: "1999", abstract: "Research assistant blows whistle on supervisor.", created_at: "2017-06-14 15:00:23", updated_at: "2017-06-14 15:00:23">]:each>' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: %ul.cases
+    4:  = render @cases.each
+    5: 
+    6: 
+    7: 
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121719144560'
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:51:25 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  Rendered case/index.html.haml within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error ('#<Enumerator: [#<Case id: 1, title: "The Whistle-Blower", year: "1999", abstract: "Research assistant blows whistle on supervisor.", created_at: "2017-06-14 15:00:23", updated_at: "2017-06-14 15:00:23">, #<Case id: 2, title: "Immigration woe", year: "2016", abstract: "Student stuck in bad TA position due to immigratio...", created_at: "2017-06-14 15:00:23", updated_at: "2017-06-14 15:00:23">, #<Case id: 3, title: "Spam", year: "2018", abstract: "Spam, spam, spam", created_at: "2017-06-14 15:02:54", updated_at: "2017-06-14 15:02:54">]:each>' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: %ul.cases
+    4:  = render @cases.each
+    5: 
+    6: 
+    7: 
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121685012660'
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:57:53 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  Rendered case/index.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: %ul.cases
+    4:  = render collection: @cases.each
+    5: 
+    6: 
+    7: 
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121740570120'
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:59:00 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/case/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+rtial: 'collection' collection: @cases.each
+                              ^):
+  
+app/views/case/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-14 14:59:53 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  Rendered case/index.html.haml within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial case/_collection, application/_collection with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/kelly/Desktop/ethicscases/app/views"
+):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: %ul.cases
+    4:  = render partial: 'collection', collection: @cases.each
+    5: 
+    6: 
+    7: 
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121740326060'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:10:37 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Class:0x007f8cf9cbd288>):
+    1: #index.thml.haml
+    2: %h1 List of cases
+    3: %ul.cases
+    4:  = @case = Case.title
+    5: 
+    6: 
+    7: 
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121731044600'
+Started GET "/" for 127.0.0.1 at 2017-06-14 15:11:08 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  Rendered case/index.html.haml within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=title):
+  
+app/views/case/index.html.haml:4:in `_app_views_case_index_html_haml___1356819746493823419_70121740206240'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT "cases".* FROM "cases"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Peggy"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Connolley"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Peggy"], ["last_name", "Connolley"], ["created_at", "2017-06-14 20:18:19.667343"], ["updated_at", "2017-06-14 20:18:19.667343"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Bob"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Ladenson"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Bob"], ["last_name", "Ladenson"], ["created_at", "2017-06-14 20:18:19.679867"], ["updated_at", "2017-06-14 20:18:19.679867"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Vivian"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Weil"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Vivian"], ["last_name", "Weil"], ["created_at", "2017-06-14 20:18:19.683240"], ["updated_at", "2017-06-14 20:18:19.683240"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? LIMIT ?[0m  [["first_name", "Michael"], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? LIMIT ?[0m  [["last_name", "Davis"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Michael"], ["last_name", "Davis"], ["created_at", "2017-06-14 20:18:19.686301"], ["updated_at", "2017-06-14 20:18:19.686301"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Peggy"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Connolley"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "The Whistle-Blower"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "The Whistle-Blower"], ["year", "1999"], ["abstract", "Research assistant blows whistle on supervisor."], ["created_at", "2017-06-14 20:18:19.719986"], ["updated_at", "2017-06-14 20:18:19.719986"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 1], ["case_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Vivian"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Weil"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["first_name", "Michael"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" = ? AND ("authors"."id" != ?) LIMIT ?[0m  [["last_name", "Davis"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mCase Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "cases" WHERE "cases"."title" = ? LIMIT ?[0m  [["title", "Immigration woe"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Immigration woe"], ["year", "2016"], ["abstract", "Student stuck in bad TA position due to immigration status,\n              overworked and underpaid"], ["created_at", "2017-06-14 20:18:19.734696"], ["updated_at", "2017-06-14 20:18:19.734696"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 3], ["case_id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "authors_cases" ("author_id", "case_id") VALUES (?, ?)[0m  [["author_id", 4], ["case_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cases"[0m

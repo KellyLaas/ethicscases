@@ -6,7 +6,7 @@ Author.destroy_all
 Case.create!([{
   title: "The Whistle-Blower",
   abstract: "Research assistant blows whistle on supervisor.",
-  year: "1999"
+  year: "1999",
   authors: [@author_one]
 },
 
@@ -14,10 +14,10 @@ Case.create!([{
   title: "Immigration woe",
   abstract: "Student stuck in bad TA position due to immigration status,
               overworked and underpaid",
-  year: "2016"
+  year: "2016",
   authors: [
-            Author.create (first_name: 'Vivian', last_name: 'Weil'),
-            Author.create (first_name: 'Michael', last_name: 'Davis')
+            Author.create(first_name: 'Vivian', last_name: 'Weil'),
+            Author.create(first_name: 'Michael', last_name: 'Davis')
             ]
 }])
 
