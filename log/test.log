@@ -1,0 +1,200 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "authors_cases" ("author_id" integer NOT NULL, "case_id" integer NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_author_id_and_case_id" ON "authors_cases" ("author_id", "case_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_cases_on_author_id_and_case_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_cases_on_case_id_and_author_id" ON "authors_cases" ("case_id", "author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "authors_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "authors_subjects" ("author_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_author_id_and_subject_id" ON "authors_subjects" ("author_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_subjects_on_author_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_authors_subjects_on_subject_id_and_author_id" ON "authors_subjects" ("subject_id", "author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "cases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "abstract" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "cases_subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "cases_subjects" ("case_id" integer NOT NULL, "subject_id" integer NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_case_id_and_subject_id" ON "cases_subjects" ("case_id", "subject_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cases_subjects_on_case_id_and_subject_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_cases_subjects_on_subject_id_and_case_id" ON "cases_subjects" ("subject_id", "case_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "subjects"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170613191123)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170612192353),
+(20170612192743),
+(20170612192910),
+(20170612201702),
+(20170612201926),
+(20170612202115),
+(20170613183931),
+(20170613184429);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2017-06-14 11:22:02.787809"], ["updated_at", "2017-06-14 11:22:02.787809"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:22:02.881506', '2017-06-14 11:22:02.881506', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:22:02.881506', '2017-06-14 11:22:02.881506', 298486374)[0m
+  [1m[36mFixture Delete (0.7ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:22:02.884958', '2017-06-14 11:22:02.884958', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:22:02.884958', '2017-06-14 11:22:02.884958', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:22:02.887589', '2017-06-14 11:22:02.887589', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:22:02.887589', '2017-06-14 11:22:02.887589', 298486374)[0m
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:22:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 280ms (Views: 272.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:23:03.593605', '2017-06-14 11:23:03.593605', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:23:03.593605', '2017-06-14 11:23:03.593605', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:23:03.604969', '2017-06-14 11:23:03.604969', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:23:03.604969', '2017-06-14 11:23:03.604969', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:23:03.606771', '2017-06-14 11:23:03.606771', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:23:03.606771', '2017-06-14 11:23:03.606771', 298486374)[0m
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:23:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 126ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "authors"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Kelly', 'Laas', '2017-06-14 11:23:24.563157', '2017-06-14 11:23:24.563157', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at", "id") VALUES ('Peggy', 'Connelly', '2017-06-14 11:23:24.563157', '2017-06-14 11:23:24.563157', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "cases"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('What a day', '1999', 'Student gets sucked down a whirlpool', '2017-06-14 11:23:24.566552', '2017-06-14 11:23:24.566552', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "cases" ("title", "year", "abstract", "created_at", "updated_at", "id") VALUES ('Slavedriving PI', '2017', 'Student asked to work over all weekends in a year', '2017-06-14 11:23:24.566552', '2017-06-14 11:23:24.566552', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "subjects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:23:24.569388', '2017-06-14 11:23:24.569388', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "subjects" ("subject", "created_at", "updated_at", "id") VALUES ('MyString', '2017-06-14 11:23:24.569388', '2017-06-14 11:23:24.569388', 298486374)[0m
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+AuthorTest: test_should_not_save_author_without_first_or_last_name
+------------------------------------------------------------------
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2017-06-14 06:23:24 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 129ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CaseTest: test_should_have_a_title,_year_and_abstract
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+SubjectTest: test_should_not_save_subject_without_content
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSubject Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "subjects" WHERE "subjects"."subject" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
