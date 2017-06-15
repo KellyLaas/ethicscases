@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'cases#index'
+  root 'authors#index'
   resources :cases, :authors, :subjects
 
   # For details on the DSL available within this file, see
