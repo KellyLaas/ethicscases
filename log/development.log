@@ -1988,3 +1988,2152 @@ Processing by CaseController#index as HTML
 Completed 200 OK in 22ms (Views: 20.8ms)
 
 
+Started GET "/jobs/index" for 127.0.0.1 at 2017-06-15 15:54:33 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/jobs/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:54:34 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 305ms (Views: 290.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:54:35 -0500
+Processing by CaseController#index as HTML
+  Rendering case/index.html.haml within layouts/application
+  Rendered case/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 15:54:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 15:54:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 15:55:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:55:48 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:55:49 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:56:54 -0500
+  
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-06-15 15:59:14 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 15ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:00:22 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:00:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 16:00:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 16:00:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=cases" for 127.0.0.1 at 2017-06-15 16:00:41 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/rails/info/routes?path=cases.i" for 127.0.0.1 at 2017-06-15 16:00:46 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases.i"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/rails/info/routes?path=cases.index" for 127.0.0.1 at 2017-06-15 16:00:47 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases.index"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/rails/info/routes?path=cases.index" for 127.0.0.1 at 2017-06-15 16:00:48 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases.index"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cases" for 127.0.0.1 at 2017-06-15 16:00:50 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cases/i" for 127.0.0.1 at 2017-06-15 16:00:51 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases/i"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cases/inde" for 127.0.0.1 at 2017-06-15 16:00:52 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases/inde"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/rails/info/routes?path=cases/index" for 127.0.0.1 at 2017-06-15 16:00:52 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cases/index"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 16:01:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases.index" for 127.0.0.1 at 2017-06-15 16:01:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases.index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:03:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/case/index" for 127.0.0.1 at 2017-06-15 16:03:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/case/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/case/index" for 127.0.0.1 at 2017-06-15 16:05:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/case/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:05:49 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.5ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 17ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:05:50 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:06:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:06:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:06:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2017-06-15 16:07:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index" for 127.0.0.1 at 2017-06-15 16:07:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:07:42 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:07:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:07:43 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:07:44 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.2ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/edit" for 127.0.0.1 at 2017-06-15 16:07:51 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=edit):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/edit" for 127.0.0.1 at 2017-06-15 16:09:40 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"edit"}
+Completed 500 Internal Server Error in 131ms
+
+
+  
+NameError (undefined local variable or method `all' for #<CasesController:0x007fe039549158>):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/edit" for 127.0.0.1 at 2017-06-15 16:11:28 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mCase Load (1.3ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 10ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=edit):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:11:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:11:29 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:11:30 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kelly/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2017-06-15 16:11:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/say/hello"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/store/index" for 127.0.0.1 at 2017-06-15 16:11:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/store/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/store/index" for 127.0.0.1 at 2017-06-15 16:11:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/store/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/case/index" for 127.0.0.1 at 2017-06-15 16:12:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/case/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:12:10 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:12:10 -0500
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mCase Load (0.1ms)[0m  [1m[34mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Case with 'id'=index):
+  
+app/controllers/cases_controller.rb:67:in `set_case'
+Started GET "/cases/" for 127.0.0.1 at 2017-06-15 16:13:48 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/cases/" for 127.0.0.1 at 2017-06-15 16:17:19 -0500
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  root 'cases#index' as 'cases_index'
+                       ^
+/Users/kelly/Desktop/ethicscases/config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:17:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:17:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:17:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:18:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:18:23 -0500
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  root 'cases' as 'cases'
+                 ^
+/Users/kelly/Desktop/ethicscases/config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:18:52 -0500
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  root 'cases#index' as 'cases_index'
+                       ^
+/Users/kelly/Desktop/ethicscases/config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:18:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/carts/wibble" for 127.0.0.1 at 2017-06-15 16:18:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carts/wibble"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/" for 127.0.0.1 at 2017-06-15 16:18:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/" for 127.0.0.1 at 2017-06-15 16:18:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/" for 127.0.0.1 at 2017-06-15 16:19:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:19:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cases/index" for 127.0.0.1 at 2017-06-15 16:19:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cases/index"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:22:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:22:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:23:45 -0500
+  
+NoMethodError (undefined method `to' for #<ActionDispatch::Routing::Mapper:0x007fe03ca171f0>):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:24:10 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 17ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:25:26 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/authors/" for 127.0.0.1 at 2017-06-15 16:25:31 -0500
+  
+ActionController::RoutingError (uninitialized constant AuthorsController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/authors/" for 127.0.0.1 at 2017-06-15 16:25:36 -0500
+  
+ActionController::RoutingError (uninitialized constant AuthorsController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/author/" for 127.0.0.1 at 2017-06-15 16:25:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/author"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/author/" for 127.0.0.1 at 2017-06-15 16:26:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/author"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/authors/" for 127.0.0.1 at 2017-06-15 16:26:12 -0500
+  
+ActionController::RoutingError (uninitialized constant AuthorsController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/authors/" for 127.0.0.1 at 2017-06-15 16:26:15 -0500
+  
+ActionController::RoutingError (uninitialized constant AuthorsController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:28:29 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:33:19 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:42:20 -0500
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/controllers/cases_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/cases_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:42:35 -0500
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/controllers/cases_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/cases_controller.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:42:48 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 17ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case|
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:44:38 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+SyntaxError (/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+ @cases.each do |case |
+                     ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+)).to_s));).to_s);; _hamlout.bu
+ ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+o 'Edit', edit_case_path(case)
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << (
+          ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+ape(((link_to 'Destroy', case, method: :delete, data: { conf
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+"</td>\n</tr>\n".freeze);; end;; _hamlout.buffer << ("</tbod
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/kelly/Desktop/ethicscases/app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cases/index.html.haml:11: syntax error, unexpected keyword_case, expecting '|'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:14: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:14: syntax error, unexpected ')', expecting keyword_when
+app/views/cases/index.html.haml:15: syntax error, unexpected ';', expecting ')'
+app/views/cases/index.html.haml:15: syntax error, unexpected ',', expecting keyword_when
+app/views/cases/index.html.haml:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cases/index.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/cases/index.html.haml:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:47:06 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+     8:       %th
+     9: 
+    10:   %tbody
+    11:      - @cases.each do |case|
+    12:       %tr
+    13:         %td= link_to 'Show', case
+    14:         %td= link_to 'Edit', edit_case_path(case)
+  
+app/views/cases/index.html.haml:11
+Started GET "/" for 127.0.0.1 at 2017-06-15 16:47:26 -0500
+Processing by CasesController#index as HTML
+  Rendering cases/index.html.haml within layouts/application
+  Rendered cases/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+     9: 
+    10:   %tbody
+    11:   - @cases.each do |case|
+    12:       %tr
+    13:         %td= link_to 'Show', case
+    14:         %td= link_to 'Edit', edit_case_path(case)
+    15:         %td= link_to 'Destroy', case, method: :delete, data: { confirm: 'Are you sure?' }
+  
+app/views/cases/index.html.haml:12
