@@ -1,5 +1,24 @@
 #index.thml.haml
-%h1 List of cases
+
+%h1 Cases
+%ol
+  = @cases.each do |case|
+    %li
+    = case.title
+    %li
+    = case.year
+    %li
+    = truncate(strip_tags(case.abstract), length: 80)
+    %li.list_actions
+    = link_to 'Show', case
+    %li/
+    = link_to 'Edit', edit_case_path(case)
+    %li/
+    = link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' }
+    %li/
+    = link_to 'New Case', new_case_path
+
+
 
 
 

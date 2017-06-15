@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # My custom gems
   gem 'haml-rails', '~> 1.0'
+
