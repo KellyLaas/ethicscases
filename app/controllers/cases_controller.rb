@@ -4,7 +4,7 @@ class CasesController < ApplicationController
   # GET /cases
   # GET /cases.json
   def index
-    @cases = Case.order(:title)
+    @cases = Case.all
   end
 
   # GET /cases/1
