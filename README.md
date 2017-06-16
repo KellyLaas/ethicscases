@@ -2,11 +2,11 @@
 App running on Ruby 2.3.1 and Rails 5.1
 Uses gems haml-rails. For all gems, see Gemfile
 
-This app is meant to help manage a library of ethics cases, and allow a user to search by title, author, and subject. All of these tables are related through HABTM. 
+This app is meant to help manage a library of ethics cases, and allow a user to search by title, author, and subject. All of these tables are related through HABTM.
 
-Tests include making sure all fields have input before they are saved, and in case, :year, that a user can only enter four numbers. 
+Tests include making sure all fields have input before they are saved, and in case, :year, that a user can only enter four numbers.
 
-In its current iteration, a case controller has been generated, but much more work needs to be done on the front end. 
+In its current iteration, a case controller has been generated, but had major issues, so generated a scaffod for authors instead, need to go back and fix autor controller and view in the next iteration of this app.
 
 * ...
 ./
