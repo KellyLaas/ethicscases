@@ -4671,3 +4671,69 @@ Processing by AuthorsController#index as HTML
 Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/authors/new" for 127.0.0.1 at 2017-06-15 17:47:01 -0500
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (2.0ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2017-06-15 17:47:06 -0500
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PFs00dP9JNZrxduBEb9Mr/9fs0S9TzLxaOGrGdbr+bDIAn8vceWDi4xdr0EFhFwh4Pk9g4Pn5KH3mY5Ivc91pA==", "commit"=>"Create Author"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (2.5ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 25ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2017-06-15 17:47:10 -0500
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (1.2ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2017-06-15 17:48:38 -0500
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yll8AE/Br1g9lE2HM7K0/Qzxtj2WqYMiL3LlbQYSpMg+ADf+7dkIBdoMOUcniaRzE1c4+qgBVXKwCsA8bTYo3A==", "commit"=>"Create Author"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."first_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."last_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (1.7ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors/" for 127.0.0.1 at 2017-06-15 17:48:47 -0500
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" ORDER BY "authors"."last_name" ASC[0m
+  Rendered authors/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2017-06-15 17:48:48 -0500
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (1.1ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2017-06-15 17:48:48 -0500
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (1.3ms) [cache miss]
+  Rendered authors/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
