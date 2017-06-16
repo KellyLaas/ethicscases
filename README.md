@@ -6,7 +6,7 @@ This app is meant to help manage a library of ethics cases, and allow a user to 
 
 Tests include making sure all fields have input before they are saved, and in case, :year, that a user can only enter four numbers.
 
-In its current iteration, a case controller has been generated, but had major issues, so generated a scaffod for authors instead, need to go back and fix autor controller and view in the next iteration of this app.
+In its current iteration, a case controller has been generated, but had major issues, so generated a scaffold for authors instead, need to go back and fix author controller and view in the next iteration of this app.git
 
 * ...
 ./
